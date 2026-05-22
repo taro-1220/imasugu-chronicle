@@ -19,18 +19,18 @@
 | [04/13](13.md) | ユーザー識別設計・クーポン DB 経由・UI クリーンアップ |
 | [04/14](14.md) | 決済画面全面刷新・visitSession主語移行・Ops UI |
 | [04/15](15.md) | クーポン DB UNIQUE 制約による重複防止 |
-| [04/16](16.md) | PaymentStep 抽出・カスタマー可視性・bill receipts |
-| [04/17](17.md) | storeId/restaurantId正本化・テナント分離・クーポン修正 |
-| [04/18](18.md) | 地理情報ソート・publicSlot TTL・storeId境界修正 |
-| [04/19](19.md) | 未確認 |
-| [04/20](20.md) | PayPay/Wallet 対応・クーポン正本統一・マップ修正 |
-| [04/21](21.md) | 未確認 |
-| [04/22](22.md) | 決済正規表示・アナリティクス SSOT 修正 |
-| [04/23](23.md) | 未確認 |
-| [04/24](24.md) | 保存済みカード認証失敗後 CTA 修正 |
-| [04/25](25.md) | 注文→会計フロー修正・冪等化 |
-| [04/26](26.md) | P0-1 scanScopedItems レガシーフォールバック削除 |
-| [04/27](27.md) | P1 シリーズ Turso BLOCKED・ポーリング削減 |
-| [04/28](28.md) | P2/P3/P5 Supabase 移行・クーポン owner 修正 |
-| [04/29](29.md) | P5-5R/6R Turso 完全除去・Supabase 全面移行 |
-| [04/30](30.md) | P5シリーズ・本番checkout修正・P0オンボーディング |
+| [04/16](16.md) | PaymentStep 抽出 → CouponAwardPopup バグ露見・register-api 診断ログ追加 |
+| [04/17](17.md) | テナント分離カスケード（localStorage グローバルキーが根本）+ payment-confirm 追加・transaction key chain 切断と修復 |
+| [04/18](18.md) | seatAuth SSOT 整理（selectedSlot/activeReservation 混在解消）・geolocation ソート・publicSlot TTL |
+| [04/19](19.md) | 作業なし |
+| [04/20](20.md) | payment-confirm を3日で撤退・クーポン正本 /api/coupons/list 統一・Stripe Customer 再利用修正 |
+| [04/21](21.md) | 作業なし |
+| [04/22](22.md) | F〜G: payment canonical 仕上げ・analytics store 参照 SSOT 修正 |
+| [04/23](23.md) | 作業なし |
+| [04/24](24.md) | H-2a〜2d ID integrity repair・カード認証失敗後 CTA が二度と反応しなくなるバグ修正 |
+| [04/25](25.md) | P0 本番で保存済みカード CTA 無反応修正・order confirm 送信フロー修正・冪等化 |
+| [04/26](26.md) | P0-1 scanScopedItems レガシーフォールバック削除（read path scoped-only 化） |
+| [04/27](27.md) | P1 Turso BLOCKED 緊急対応 — 接続数制限の見落とし・全ポーリング削減・ensureSchema 停止 |
+| [04/28](28.md) | Supabase dual-write 開始（P3）・seat_hold 控除を同日 revert（P3-D-12）・P5 primary 昇格 |
+| [04/29](29.md) | P5-5R/6R Turso 完全撤去・libsql 削除・business ダッシュボード全 read path API 化 |
+| [04/30](30.md) | P5-7〜9 スロット/メニュー DB 正本化・本番3インシデント緊急修正（MENU/STRIPE-SSOT/DUPLICATE-PI） |
