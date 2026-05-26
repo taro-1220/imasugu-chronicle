@@ -25,3 +25,4 @@
 | [05/19](19.md) | split payment 後の localStorage 残留クリーンアップ・equal split フェッチループ修正・Safari UUID fallback |
 | [05/20](20.md) | V1 顧客導線断絶（feature gate server/client 不一致）緊急修正・Welcome step 追加・コンポーネント大規模分割 |
 | [05/21](21.md) | PM.customer SSOT カスケード・snapshot 復元の副作用境界ミス・PAYMENTS.md 追加 |
+| [05/25](25.md) | IDOR 対策 ownership gate → reservation 先行作成へ設計修正・split/item split 状態ロック修正 |
