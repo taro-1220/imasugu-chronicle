@@ -28,3 +28,4 @@
 | [05/25](25.md) | IDOR 対策 ownership gate → reservation 先行作成へ設計修正・split/item split 状態ロック修正 |
 | [05/26](26.md) | item split Apple Pay 対応・重複支払い防止・billing バグ修正・ウェルカム画面改善 |
 | [05/27](27.md) | paid 完了画面 UI 改善・item split UX 改善・billing ラベル整理・メール再送機能追加 |
+| [05/31](31.md) | CLAUDE.md 運用ルール追記・状態遷移修正・フォールバック削除・マップコンポーネント分割 |
